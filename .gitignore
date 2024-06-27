@@ -8,54 +8,54 @@ __pycache__/
 venv/
 env/
 
-# Jupyter Notebook ignores
-.ipynb_checkpoints/
+# # Jupyter Notebook ignores
+# .ipynb_checkpoints/
 
-# Compiled files
-*.o
-*.out
-*.exe
+# # Compiled files
+# *.o
+# *.out
+# *.exe
 
-# Logs and databases
-*.log
-*.sql
-*.sqlite
+# # Logs and databases
+# *.log
+# *.sql
+# *.sqlite
 
-# OS-specific files
-.DS_Store
-Thumbs.db
+# # OS-specific files
+# .DS_Store
+# Thumbs.db
 
-# Backup files
-*~
-\#*
+# # Backup files
+# *~
+# \#*
 
-# Package files
-*.tar.gz
-*.tgz
-*.zip
+# # Package files
+# *.tar.gz
+# *.tgz
+# *.zip
 
-# Ignore sensitive or user-specific files
-config.ini
-credentials.json
+# # Ignore sensitive or user-specific files
+# config.ini
+# credentials.json
 
-# Ignore large files and datasets
-*.csv
-*.xls
-*.xlsx
-*.json
+# # Ignore large files and datasets
+# *.csv
+# *.xls
+# *.xlsx
+# *.json
 
-# Ignore model files
-*.sav
+# # Ignore model files
+# *.sav
 
-# Ignore audio or video files
-*.mp3
-*.mp4
+# # Ignore audio or video files
+# *.mp3
+# *.mp4
 
-# Ignore generated plots or images
-*.png
-*.jpg
-*.jpeg
-*.svg
+# # Ignore generated plots or images
+# *.png
+# *.jpg
+# *.jpeg
+# *.svg
 
 # Ignore any other project-specific files or directories not intended for version control
 
