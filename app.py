@@ -19,7 +19,7 @@ combined_feedback_file = os.path.join(feedback_dir, 'combined_feedback.csv')
 filename = 'saved_model.sav'
 with open(filename, 'rb') as model_file:
     saved_model = pickle.load(model_file)
-
+    
 vectorizer_filename = 'tfidf_vectorizer.sav'
 with open(vectorizer_filename, 'rb') as vectorizer_file:
     tfidf_vectorizer = pickle.load(vectorizer_file)
@@ -87,6 +87,14 @@ def handle_voice_command(command):
         pos_df, neu_df, neg_df, combined_df = load_feedback()
         st.subheader(f"Last {num} Feedback Entries")
         st.write(combined_df.tail(num))
+    elif 'show first' in command or 'first entries'  in command:
+        try:
+            num = int(command.split()[-1])
+        except ValueError:
+            num = 5  # Default to show last 5 if no specific number is mentioned
+        pos_df, neu_df, neg_df, combined_df = load_feedback()
+        st.subheader(f"First {num} Feedback Entries")
+        st.write(combined_df.head(num))
     elif 'show +ve' in command or 'show positive' in command:
         pos_df, _, _, _ = load_feedback()
         st.subheader("Positive Feedback Entries")
